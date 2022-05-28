@@ -28,5 +28,15 @@ const words = ['hat', 'river', 'lucky', 'statue', 'generate',
 
 // INITIALIZE GAME
 function init() {
+    // LOAD WORD FROM ARRAY
+    showWord(words);
+}
 
+// PICK & SHOW RANDOM WORD
+function showWord(words) {
+    // GENERATE RANDOM WORD
+    const randIndex = Math.floor(Math.random() * words.length);
+    const randWord = words[randIndex];
+    // DISPLAY WORD IN DOM
+    currentWord.innerHTML = randWord;
 }
