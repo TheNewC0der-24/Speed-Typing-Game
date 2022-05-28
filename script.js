@@ -17,30 +17,9 @@ const timeDisplay = document.querySelector("#time");
 const message = document.querySelector("#message");
 const seconds = document.querySelector("#seconds");
 
-const words = [
-    'hat',
-    'river',
-    'lucky',
-    'statue',
-    'generate',
-    'stubborn',
-    'cocktail',
-    'runaway',
-    'joke',
-    'developer',
-    'establishment',
-    'hero',
-    'javascript',
-    'nutrition',
-    'revolver',
-    'echo',
-    'siblings',
-    'investigate',
-    'horrendous',
-    'symptom',
-    'laughter',
-    'magic',
-    'master',
-    'space',
-    'definition'
-];
+const words = ['hat', 'river', 'lucky', 'statue', 'generate',
+    'stubborn', 'cocktail', 'runaway', 'github', 'developer',
+    'establishment', 'understanding', 'javascript', 'nutrition',
+    'revolver', 'echo', 'siblings', 'investigate', 'horrendous',
+    'symptom', 'laughter', 'successfully', 'master', 'space',
+    'definition'];
