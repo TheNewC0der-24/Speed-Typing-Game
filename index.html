@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Word Beater</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
 
@@ -29,14 +32,14 @@
                 <p class="lead">
                     Type the given Word within <span class="text-success fw-bold" id="seconds">5</span> seconds :
                 </p>
-                <h2 class="display-2 mb-5" id="current-word">hello</h2>
+                <h2 class="display-2 mb-5 text-primary" id="current-word">hello</h2>
                 <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
                     autofocus>
                 <h4 class="mt-3" id="message"></h4>
 
                 <!-- Time & Score Columns -->
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-danger">
                         <h3>Time Left :
                             <span id="time">0</span>
                         </h3>
@@ -51,11 +54,11 @@
                 <!-- Instructions -->
                 <div class="row mt-5">
                     <div class="col-md-12">
-                        <div class="card bg-secondary text-white">
+                        <div class="card bg-secondary text-warning">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <lord-icon src="https://cdn.lordicon.com/aixyixpa.json" trigger="loop"
-                                        colors="primary:#ffffff" state="hover" style="width:30px;height:30px">
+                                        colors="primary:#ffc107" state="hover" style="width:30px;height:30px">
                                     </lord-icon> Instructions
                                 </h5>
                                 <hr>
