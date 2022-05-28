@@ -47,7 +47,12 @@ function startMatch() {
         wordInput.value = "";
         score++;
     }
-    scoreDisplay.innerHTML = score;
+    // IF SCORE IS -1, DISPLAY 0
+    if (score === -1) {
+        scoreDisplay.innerHTML = 0;
+    } else {
+        scoreDisplay.innerHTML = score;
+    }
 }
 
 // MATCH currentWord TO wordInput
