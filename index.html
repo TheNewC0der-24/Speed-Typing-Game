@@ -14,7 +14,10 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark text-white">
+<body onload="preLoader()" class="bg-dark text-white">
+
+    <div id="loading"></div>
+
     <header class="bg-secondary text-center p-3 mb-5">
         <h1>WordBeater</h1>
     </header>
@@ -45,11 +48,32 @@
                     </div>
                 </div>
 
-
+                <!-- Instructions -->
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <lord-icon src="https://cdn.lordicon.com/aixyixpa.json" trigger="loop"
+                                        colors="primary:#ffffff" state="hover" style="width:30px;height:30px">
+                                    </lord-icon> Instructions
+                                </h5>
+                                <hr>
+                                <p class="card-text">Type each word in the given amount of seconds to score. <br> To
+                                    play again, just type the current word. <br> Your score will reset.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- LordIcon -->
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+    <!-- Script JS -->
     <script src="./script.js"></script>
 </body>
 
