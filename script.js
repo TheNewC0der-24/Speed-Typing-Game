@@ -47,7 +47,13 @@ function startMatch() {
 
 // MATCH currentWord TO wordInput
 function matchWords() {
-
+    if (wordInput.value === currentWord.innerHTML) {
+        message.innerHTML = "Correct!";
+        return true;
+    } else {
+        message.innerHTML = "Wrong!";
+        return false;
+    }
 }
 
 // PICK & SHOW RANDOM WORD
