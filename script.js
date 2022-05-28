@@ -4,6 +4,8 @@ function preLoader() {
     loader.style.display = "none";
 }
 
+window.addEventListener('load', init);
+
 // GLOBAL VARIABLES
 let time = 5;
 let score = 0;
@@ -23,3 +25,8 @@ const words = ['hat', 'river', 'lucky', 'statue', 'generate',
     'revolver', 'echo', 'siblings', 'investigate', 'horrendous',
     'symptom', 'laughter', 'successfully', 'master', 'space',
     'definition'];
+
+// INITIALIZE GAME
+function init() {
+
+}
