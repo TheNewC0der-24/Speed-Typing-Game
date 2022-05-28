@@ -7,7 +7,18 @@ function preLoader() {
 window.addEventListener('load', init);
 
 // GLOBAL VARIABLES
-let time = 5;
+
+// AVAILABLE LEVELS
+const levels = {
+    easy: 5,
+    medium: 3,
+    hard: 2
+}
+
+// TO CHANGE LEVEL
+const currentLevel = levels.easy;
+
+let time = currentLevel;
 let score = 0;
 let isPlaying;
 
