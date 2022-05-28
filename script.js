@@ -41,17 +41,22 @@ function init() {
 // START MATCHING
 function startMatch() {
     if (matchWords()) {
-
+        isPlaying = true;
+        time = 6;
+        showWord(words);
+        wordInput.value = "";
+        score++;
     }
+    scoreDisplay.innerHTML = score;
 }
 
 // MATCH currentWord TO wordInput
 function matchWords() {
     if (wordInput.value === currentWord.innerHTML) {
-        message.innerHTML = "Correct!";
+        message.innerHTML = `<h4 class="mt-3 text-success" id="message">Correct ✅</h4>`;
         return true;
     } else {
-        message.innerHTML = "Wrong!";
+        message.innerHTML = `<h4 class="mt-3 text-danger" id="message">Wrong ❌</h4>`;
         return false;
     }
 }
@@ -81,7 +86,7 @@ function countdown() {
 
 function checkStatus() {
     if (!isPlaying && time === 0) {
-        message.innerHTML = "Game Over!";
+        message.innerHTML = `<h4 class="mt-3 text-danger" id="message">Game Over☹️</h4>`;
         score = -1;
     }
 }
