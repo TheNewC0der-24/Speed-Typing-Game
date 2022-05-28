@@ -7,18 +7,7 @@ function preLoader() {
 window.addEventListener('load', init);
 
 // GLOBAL VARIABLES
-
-// AVAILABLE LEVELS
-const levels = {
-    easy: 5,
-    medium: 3,
-    hard: 2
-}
-
-// TO CHANGE LEVEL
-const currentLevel = levels.easy;
-
-let time = currentLevel;
+let time = 5;
 let score = 0;
 let isPlaying;
 
@@ -102,7 +91,7 @@ function countdown() {
 
 function checkStatus() {
     if (!isPlaying && time === 0) {
-        message.innerHTML = `<h4 class="mt-3 text-danger" id="message">Game Over☹️</h4>`;
+        message.innerHTML = `<h4 class="mt-3 badge bg-danger" id="message">Game Over☹️</h4>`;
         score = -1;
     }
 }
