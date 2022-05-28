@@ -30,8 +30,24 @@ const words = ['hat', 'river', 'lucky', 'statue', 'generate',
 function init() {
     // LOAD WORD FROM ARRAY
     showWord(words);
+    // START MATCHING ON WORD INPUT
+    wordInput.addEventListener("input", startMatch);
     // START COUNTDOWN
     setInterval(countdown, 1000);
+    // CHECK GAME STATUS
+    setInterval(checkStatus, 50);
+}
+
+// START MATCHING
+function startMatch() {
+    if (matchWords()) {
+
+    }
+}
+
+// MATCH currentWord TO wordInput
+function matchWords() {
+
 }
 
 // PICK & SHOW RANDOM WORD
@@ -55,4 +71,11 @@ function countdown() {
     }
     // DISPLAY TIME
     timeDisplay.innerHTML = time;
+}
+
+function checkStatus() {
+    if (!isPlaying && time === 0) {
+        message.innerHTML = "Game Over!";
+        score = -1;
+    }
 }
