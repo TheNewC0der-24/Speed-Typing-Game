@@ -1,0 +1,11 @@
+input {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: 3px solid #198754 !important;
+}
+
+input:focus {
+    border: 3px solid !important;
+    border-color: #198754 !important;
+}
