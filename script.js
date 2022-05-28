@@ -30,6 +30,8 @@ const words = ['hat', 'river', 'lucky', 'statue', 'generate',
 function init() {
     // LOAD WORD FROM ARRAY
     showWord(words);
+    // START COUNTDOWN
+    setInterval(countdown, 1000);
 }
 
 // PICK & SHOW RANDOM WORD
@@ -39,4 +41,18 @@ function showWord(words) {
     const randWord = words[randIndex];
     // DISPLAY WORD IN DOM
     currentWord.innerHTML = randWord;
+}
+
+// COUNTDOWN TIMER
+function countdown() {
+    // MAKE SURE TIME IS NOT RAN OUT
+    if (time > 0) {
+        // DECREASE TIME BY 1
+        time--;
+    } else if (time === 0) {
+        // GAME OVER
+        isPlaying = false;
+    }
+    // DISPLAY TIME
+    timeDisplay.innerHTML = time;
 }
